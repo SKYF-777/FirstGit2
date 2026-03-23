@@ -4,8 +4,10 @@ import kotlin.random.Random
 
 class Consultant(
     name: String,
-    age: Int = 0
-):Worker(name = name, age = age) {
+    age: Int = 0,
+    id: Int = 0,
+    val positionConsultant: String
+):Worker(name = name, age = age, id = id, position = Position.CONSULTANT) {
     override fun work() {
         serveCustomers()
     }

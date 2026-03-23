@@ -20,10 +20,10 @@ package corparation
 //}
 
 fun main() {
-    val director = Director("Andrey", 35)
-    val consultant = Consultant("Max")
-    val assistant = Assistant("Helen", 20)
-    val accountant =Accountant("Chester", 45)
+    val director = Director("Andrey", 35, id = 9876, "Director")
+    val consultant = Consultant("Max", age = 45, id = 9576, "Consultant")
+    val assistant = Assistant("Helen", 20, id = 9856,"Assistant" )
+    val accountant =Accountant("Chester", 45, id = 4792, "Accountant")
     val employees = listOf<Worker>(director,consultant, assistant,accountant)
     for(employee in employees) {
         employee.work()
